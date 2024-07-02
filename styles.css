@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Overpass", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+article {
+  border: 2px solid rgb(32, 18, 121);
+  border-radius: 1.5em;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info img {
+  border-radius: 50%;
+}
+
+.info-email {
+  color: rgb(87, 94, 146);
+}
+
+h3 {
+  color: rgb(82, 77, 77);
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.goals ul li {
+  list-style-type: square;
+  line-height: 1.5;
+}
+
+.links ul li a {
+  display: flex;
+  gap: 0.5rem;
+  width: fit-content;
+  color: rgb(32, 18, 121);
+}
+
+.time-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-flex p span {
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .info {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .time-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

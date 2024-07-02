@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HNG STAGE 1</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="info">
+          <img
+            src="./profile pic.jpg"
+            alt="Ayobami's display picture"
+            data-testid="slackProfilePicture"
+          />
+          <div>
+            <h2 data-testid="slackDisplayName">Lynxdev</h2>
+            <p data-testid="slackEmail" class="info-email">
+              lynxdev32@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="goals">
+          <h3>Tech Goals in Two Years</h3>
+          <ul>
+            <li>
+              Have a well paying job that solves my basic needs and positions me
+              for better opportunities
+            </li>
+            <li>
+              Have delved into mobile development with multiple projects
+              underway
+            </li>
+            <li>
+              Have begun collaborting with like minded people in building a
+              startup that connects both tech and health
+            </li>
+            <li>Have begun writing professional paid articles</li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="http://hng.tech/learn" data-testid="hngLink">
+                <p>HNG link</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://keyword.dog" data-testid="keywordLink"
+                ><p>Keyword link</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink"
+                ><p>Scrape Any link</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="time-flex">
+          <p>
+            Current Time in UTC:
+            <span id="utcTime" data-testid="currentTimeUTC"></span>
+          </p>
+          <p>
+            Current Day of the week:
+            <span id="dayOfWeek" data-testid="currentDay"></span>
+          </p>
+        </div>
+      </article>
+    </main>
+    <script src="./app.js"></script>
+    <!-- <script/> -->
+  </body>
+</html>
